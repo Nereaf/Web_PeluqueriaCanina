@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>PAT</title>
+    <link rel="shortcut icon" href="./img/huella.png">
+    <link rel="stylesheet" href="./estilo/index.css">
+</head>
+<header>
+    <!-- menú horizontal flotante -->
+
+    <nav>
+        <ul>
+            <li><a href="./index.html"> <img src="./img/logo.png"></a> </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li><a href="./pag/pedirCita.html"><button>Concerta tu cita</button></a></li>
+            <li><a href="./pag/modificarCita.html" ><button class="b2">Modifica tu cita</button></li></a>
+            <li><a href="./pag/servicios.html">Servicios</a></li>
+            <li><a href="./pag/catalogo.html">Catálogo</a></li>
+            <li><a href="./pag/instalaciones.html">Instalaciones</a></li>
+            <li><a href="./pag/quienes.html">¿Quienes somos?</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <picture class="conta">
+        <a href="./pag/contacto.html"><img src="./img/contacto.png"></a>
+    </picture>
+    <picture class="interr">
+        <a href="./pag/ayuda.html"><img src="./img/int.png"></a>
+    </picture>
+    <section class="cabecera">
+        <div class="txt">
+            <h1>EN PAT? EN CASA </h1>
+            <h2>Peluquería y tienda canina</h2>
+        </div>
+    </section>
+
+    <section class="botones">
+        <a style="   text-decoration: none;" href="pag/servicios.html"> <div class="boton1">
+            <h6>NUESTROS SERVICIOS</h6>
+
+        </div></a>
+        <div style="cursor:pointer;" class="boton3">
+            <h6 style="margin:0px; position:relative;bottom:-10%;color:#fafafa;">HORARIO</h6>
+            <h5 style="font-size: medium; font-weight: 200;color: #fafafa;"><b>Lunes a viernes</b> <br> 10:00 a 14:00 y 16:00 a 20:00<br>
+                <b>Sábados</b><br> 10:00 a 14:00<br> <b>Click aquí para más info</b></h5>
+
+        </div>
+        <a style="   text-decoration: none;" href="pag/catalogo.html"> <div class="boton2">
+            <h6>CATÁLOGO</h6>
+        </div></a>
+    </section>
+
+    <section class="bienvenida">
+        <h1>Bienvenido a PAT!</h1>
+        <br>
+        <h2>En nuestro centro podras dejar a tu mascota con la mayor comodidad y tranquilidad, ya que contamos con un
+            amplio espacio para que tu mascota se sienta como en casa.
+            En PAT ofrecemos servicios de peluquería, estética, baños, cortes,tratamientos,.. pero también objetos
+            útiles y cómodos para tu perro.
+        </h2>
+        <h3>EN PAT? EN CASA</h3>
+    </section>
+
+    <section class="mapas">
+        <div class="mapa" id="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2961.6315682138766!2d-7.733728484310271!3d42.0725159612037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3ab3983a50d62b%3A0x5caec5eb395f3bb7!2sAv.%20de%20Ourense%2C%2032630%2C%20Ourense!5e0!3m2!1ses!2ses!4v1665505035417!5m2!1ses!2ses"
+                width="100%" height="85%" style="  border: 4px solid #D3D8FF;
+                border-radius: 8px;position:relative;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div>
+
+        </div>
+
+        <div class="inf">
+
+
+            <div class="titulo">
+                <h1> Cómo encontrarnos?</h1>
+            </div>
+            <h3>
+
+                Visita nuestro centro en el bajo nº23 de la Avenida de
+                Ourense en Xinzo de Limia.
+                <br>
+                <br>
+                <strong>HORARIO</strong>: <br>
+                De lunes a viernes de 10:00 a 14:00 y de 16:00 a 20:00
+                <br>
+                Sábados de 10:00 a 14:00
+                <br>
+                Domingos y Festivos CERRADOS <br>
+                <br>
+
+                <strong>TELÉFONO DE CONTACTO</strong>: <br>
+                988 000 000
+
+            </h3>
+            <h2>Te esperamos!</h2>
+
+        </div>
+        <div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        <div class="filafooter">
+            <picture id="imlog">
+                <img src="./img/logo.png">
+            </picture>
+            <picture>
+                <img src="./img/twitter.png">
+                <img src="./img/facebook.png">
+                <img src="./img/insta.png">
+            </picture>
+        
+        </div>
+        <div class="filafooterlinea">
+            <h6>@ Copyright 2021.. All Rights Reserved</h6>
+        </div>
+  
+
+    </footer>
+</body>
+
+<script>
+    //hacemos que al pulsar en el botón de clase boton3 la página se desplace hasta el elemento con id mapa
+    document.querySelector(".boton3").addEventListener("click", function () {
+        document.querySelector("#mapa").scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+</script>
+
+</html>

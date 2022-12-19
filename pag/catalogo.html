@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>PAT-Catálogo</title>
+    <link rel="shortcut icon" href="../img/huella.png">
+    <link rel="stylesheet" href="../estilo/catalogo.css">
+</head>
+<header>
+    <!-- menú horizontal flotante -->
+
+    <nav>
+        <ul>
+            <li><a href="../index.html"> <img src="../img/logo.png"></a> </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li><a href="./pedirCita.html"><button>Concerta tu cita</button></a></li>
+            <li><a href="./modificarCita.html" ><button class="b2">Modifica tu cita</button></li></a>
+            <li><a href="../pag/servicios.html">Servicios</a></li>
+            <li class="seleccionado"><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="./instalaciones.html">Instalaciones</a></li>
+            <li><a href="./quienes.html">¿Quienes somos?</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <picture class="conta">
+        <a href="./contacto.html"><img src="../img/contacto.png"></a>
+    </picture>
+    <picture class="interr">
+        <a href="./ayuda.html"><img src="../img/int.png"></a>
+    </picture>
+
+
+    <section class="cabecera">
+
+        <div class="txt">
+            <h1>CATÁLOGO </h1>
+        </div>
+    </section>
+
+    <section class="catalogo">
+        <div class="buscador">
+            <input type="text" placeholder="Realiza tu búsqueda">
+            <button class="boton2" id="boton2">CATEGORÍAS</button>
+        </div>
+
+
+    </section>
+
+
+
+    <footer>
+        <div class="filafooter">
+            <picture id="imlog">
+                <img src="../img/logo.png">
+            </picture>
+            <picture>
+                <img src="../img/twitter.png">
+                <img src="../img/facebook.png">
+                <img src="../img/insta.png">
+            </picture>
+
+        </div>
+        <div class="filafooterlinea">
+            <h6>@ Copyright 2021.. All Rights Reserved</h6>
+        </div>
+
+
+    </footer>
+</body>
+<script>
+       //pedimos el objeto document
+    
+    //creamos objeto de tipo catalogo con nombre, precio, descripción, foto y referencia
+    function catalogo(nombre, precio, descripcion, foto, referencia, oferta) {
+        this.nombre = nombre;
+        this.precio = precio;
+        this.descripcion = descripcion;
+        this.foto = foto;
+        this.referencia = referencia;
+        this.oferta=oferta;
+    }
+    
+    //creamos un array de objetos catalogo para perros
+    var catalogoPerros = new Array();
+    catalogoPerros[0] = new catalogo("Collar de Aguacates", 15, "Collar para perros con un divertido estampado de aguacates, diseño clásico, eficaz y con materiales de calidad para que sea cómodo y duradero.", '../img/catalogo/Imagen2.png', "collar1",1);
+    catalogoPerros[1] = new catalogo("Collar rosa base con hueso", 15, "inde homenaje a tu mascota con el Collar para mascotas de tejido vegetal rosa y Placa Hueso de Perro. Este conjunto está compuesto por el Collar para mascotas de tejido vegetal rosa sin cuero y la Placa para Collar de Mascota Hueso de Perro. De la anilla con forma de corazón que sujeta la parte delantera del remache cuelga una placa en acero inoxidable en forma de hueso, con un pequeño corazón recortado en una esquina.", '../img/catalogo/Imagen1.png', "correa1",1);
+    catalogoPerros[2] = new catalogo("Collar rosa de puntos", 20, "- Ideal solo o a juego con la correa de la misma serie Modelo con topos negros.Medalla metálica en plateado. Hebilla de metal grabada WOUAPY. Elaborado en Nylon.", '../img/catalogo/Imagen3.png', "comida1",1);
+    catalogoPerros[3] = new catalogo("Correa azul extraresistente", 25, "La correa para perro Nayeco Dynamic azul es perfecta para los perros que tienen mucha fuerza y esa afición a dar tirones. Con ella podrás corregir fácilmente estos comportamientos dando leves tirones. Y no, no tendrás que preocuparte por su resistencia porque está hecha en nylon 100% trenzado con formato redondeado, algo que le da todavía más durabilidad y firmeza.", '../img/catalogo/Imagen4.png', "juguetes1",0);
+    catalogoPerros[4] = new catalogo("Correa extensible", 30, "El clásico de Flexi ahora más divertido e inspirador.Los lunares azules en uno de los laterales y la cinta color azul celeste proporcionan frescura a tus paseos.Agarre cómodo con botón y seguro para bloquear el cordón.Modelo mediano de cordón de 5 metros. Para perros de hasta 5 kg.", '../img/catalogo/Imagen5.png', "camas1",0);
+    catalogoPerros[5] = new catalogo("Chuvasquero azul", 35, "Nuestros amigos peludos necesitan sus paseos diarios aunque haga frío, llueva o nieve. Los impermeables son prendas que además de mantenerlos secos y facilitarnos el duro trabajo de secado a la vuelta a casa, ayudan a reducir la pérdida de energía. Para todos los tamaños!", '../img/catalogo/Imagen6.png', "cama1",0);
+    catalogoPerros[6] = new catalogo("Chuvasquero verde", 40, "Protege a tu perro del viento, el frío y la lluvia con este chubasquero ligero y transpirable. Proporciona seguridad en los paseos nocturnos gracias a su gran superficie reflectante. Para perros de hasta 20 Kg", '../img/catalogo/Imagen7.png', "cama2",0);
+    catalogoPerros[7] = new catalogo("Chuvasquero amarillo", 45, "mpermeable Chubasqueros para Perros con Capucha y Tiras reflectoras seguras, Ultra-Light Transpirable Impermeable 100%, para Perros Andar, Excursión, Acampada, Deambular (3XL (32-41kilogramos))", '../img/catalogo/Imagen8.png', "cama3",0);
+    catalogoPerros[8] = new catalogo("Lata comida", 50, "Comida húmeda de hígado de buey CARREFOUR 300 g.", '../img/catalogo/Imagen9.png', "cama4",0);
+    catalogoPerros[9] = new catalogo("Saco pienso 3 Kg", 55, "cIngredientes:Pollo, Arroz y Cereales integrales.Composición:Pollo (15 %), trigo integral (14 %), proteínas deshidratadas de ave, proteína de maíz, arroz (10 %), maíz (8 %), grasa animal, cebada integral, harina de maíz, proteínas animales hidrolizadas, pulpa de remolacha, levadura, aceite de pescado, cloruro de potasio, sal, difosfato de tetrasodio, carbonato de calcio, té verde, glucosamina, sulfato de condroitina.", '../img/catalogo/Imagen10.png', "cama5",0);
+    catalogoPerros[10] = new catalogo("Pienso Royal canin, 5Kg", 60, "Alimento para perros maduros de talla mediana (de 11 a 25 kg). A partir de los 10 años de edad.", '../img/catalogo/Imagen11.png', "cama6",0);
+    catalogoPerros[11] = new catalogo("Calzado para su pero", 65, "Zapatos para perros para pavimento caliente, botas para perros con suela antideslizante resistente y correa ajustable, botines de verano para perros pequeños, transpirables, ligeras, para perros pequeños, medianos y pisos de madera dura", '../img/catalogo/Imagen12.png', "cama7",0);
+    catalogoPerros[12] = new catalogo("Pack de 2 colonias", 70, "No irrita la piel y deja el pelo sano y perfumado y está especialmente indicada para la higiene frecuente de los animales domésticos con el fin de mejorar el olor característico de los mismos. Además de perfumar elimina los malos olores y es ideal para aplicar entre baños, para refrescar la piel o cuando viene una visita a casa. El envase posee vaporizador.Ideal para perros adultos y cachorros.", '../img/catalogo/Imagen13.png', "cama8",0);
+    catalogoPerros[13] = new catalogo("Atrayente para su perro", 75, "Atrayente para perros y gatos. Los productos arquivet proporcionan garantía de calidad y seguridad en el bienestar y la salud del animal.", '../img/catalogo/Imagen14.png', "cama9",0);
+
+    //añadimos a la sección caatalogo los objetos del array
+    var seccion = document.querySelector(".catalogo");
+    var tx="";
+    for (var i =0; i<catalogoPerros.length; i++){
+        if(i==0){
+            tx+="<div class='fila'>";
+        }else if(i%3==0){
+            tx += "</div><div class='fila'>"
+            
+        }
+        if(catalogoPerros[i].oferta){
+            tx+="<div class='columna'><h3> OFERTA</h3><br>";
+        }else{
+            tx+="<div class='columna'><br><br><br>"
+        }
+        tx += "<picture class='imagen'><img src="
+            +catalogoPerros[i].foto+
+            "></picture><h4>"+catalogoPerros[i].nombre+"<br><br>"+catalogoPerros[i].precio+"€ </h1><button class='boton'>Más información</button></div>";
+    
+    }  
+    seccion.innerHTML += tx; 
+    
+    //ahora añadimos que los botones llamen a la función mostrarInfo y le pasen el objeto correspondiente
+    var botones = document.querySelectorAll(".boton");
+    for (var i =0; i<botones.length; i++){
+        botones[i].addEventListener("click", mostrarInfo.bind(null, catalogoPerros[i]));
+        
+    }
+    //creamos la funcion mostrarInfo
+    function mostrarInfo(catalogoPerro){
+        
+        //creamos un div y lo añadimos al body poniéndolo en el centro de forma fija
+        var div = document.createElement("div");
+        div.setAttribute("id", "info");
+        document.body.appendChild(div);
+        div.style.position = "fixed";
+        div.style.top = "50%";
+        div.style.left = "50%";
+        div.style.transform = "translate(-50%, -50%)";
+        div.style.backgroundColor = "#E1EFFF";
+        div.style.width = "50%";
+        div.style.height = "auto";
+        div.style.border = "0px solid black";
+        /*sombra en color un poco más oscuro que el fondo*/
+        div.style.boxShadow = "0px 0px 10px 5px #B8C7E0";   
+        div.style.borderRadius = "10px";
+        div.style.padding = "10px";
+        div.style.boxSizing = "border-box";
+        //creamos dos divisiones en el div a la mitad, una verde y otra blanca
+        var div1 = document.createElement("div");
+        div1.style.width = "40%";
+        div1.style.paddingRight="10%";
+        div1.style.height = "100%";
+        div1.style.backgroundImage ="\""+catalogoPerro.foto+"\"";
+        div1.style.backgroundSize = "cover";
+        div1.style.backgroundPosition = "center";
+        div1.innerHTML+= "<img style='position:relative; width:100%; height:100%' src='"+catalogoPerro.foto+"'>";
+      
+        div1.style.borderRadius="8px";
+        div1.style.float = "left";
+
+        div.appendChild(div1);
+        var div2 = document.createElement("div");
+        div2.style.width = "50%";
+        div2.style.height = "auto";
+        div2.style.textAlign= "center";
+        div2.style.float = "left";
+        //añadimos el resto de información siguiendo el siguiente esquema Nombre: "nombre" 
+        //Precio: "precio"€
+        //Descripción: "descripcion"
+        //Añadir al carrito
+        div2.style.fontWeight = 100;
+        div2.style.fontSize = "1.1em";
+        div2.innerHTML += "<h1>"+catalogoPerro.nombre+"</h1><br><h2>Precio: "+catalogoPerro.precio+"€</h2><br><p>Descripción: "+catalogoPerro.descripcion+"</p>";
+        
+
+
+
+        div.appendChild(div2);
+        //creamos un botón para cerrar la ventana
+        var boton = document.createElement("button");
+        boton.innerHTML = "X";
+        boton.style.position = "absolute";
+        boton.style.top = "0";
+        boton.style.right = "0";
+        boton.style.backgroundColor = "#001aff";
+        boton.style.color = "#fafafa";
+        boton.style.border = "none";
+        boton.style.borderRadius = "5px";
+        boton.style.padding = "5px";
+        boton.style.margin = "5px";
+        boton.style.cursor = "pointer";
+
+        //hacemos que el botón borre el div creado
+        boton.addEventListener("click", function(){
+            document.body.removeChild(div);
+        }); 
+        div.appendChild(boton);
+        //hacer que al clicar en el botón de otro producto se borre el div anterior y se cree el nuevo
+        var botones = document.querySelectorAll(".boton");
+        for (var i =0; i<botones.length; i++){
+            botones[i].addEventListener("click", function(){
+                document.body.removeChild(div);
+            });
+        } 
+
+    }
+
+        //hacemos que al clicar en el boton de classe boton2 se cree un div uqe permita seleccionar las categorías de productos
+        var boton2 = document.querySelector(".boton2");
+
+        boton2.addEventListener("click", function(){
+ 
+            var div = document.createElement("div");
+            div.setAttribute("id", "info");
+   
+            document.body.appendChild(div);
+            div.style.position = "fixed";
+            div.style.top = "60%";
+            div.style.left = "75%";
+            div.style.transform = "translate(-50%, -50%)";
+            div.style.backgroundColor = "#E1EFFF";
+            div.style.width = "25%";
+            div.style.height = "35%";
+            div.style.border = "0px solid black";
+            /*sombra en color un poco más oscuro que el fondo*/
+            div.style.boxShadow = "0px 0px 10px 5px #B8C7E0";   
+            div.style.borderRadius = "10px";
+            div.style.padding = "10px";
+            div.style.boxSizing = "border-box";
+            div.style.display="flex";
+            div.style.flexDirection="column";
+            div.style.alignItems="center";
+            div.style.justifyContent="space-evenly";
+            div.style.color="black";
+            div.innerHTML += "<div><h1 style=\"font-size:1em;\">Qué estas buscando?</h1>";
+            //añadimos texto no centrado a la izuqierda que diga ARTICULOS
+            div.innerHTML += "<h2 style=\"font-size:1em;\">Artículos</h2></div>";
+            //creamos un div display flex con los botones de categorías
+            var div2 = document.createElement("div");
+            div2.style.display="flex";
+            div2.style.flexDirection="row";
+            div2.style.justifyContent="space-evenly";
+            div2.style.width="100%";
+            div2.style.height="100%";
+            div.appendChild(div2);
+            //creamos un botón para cada categoría
+            var boton3 = document.createElement("button");
+            boton3.innerHTML = "Collares";
+            boton3.style.backgroundColor = "#fafafa";
+            boton3.style.color = "#000";
+            boton3.style.border = "none";
+            boton3.style.borderRadius = "5px";
+            boton3.style.padding = "5px";
+            boton3.style.margin = "5px";
+            boton3.style.cursor = "pointer";
+            boton3.style.width="30%";
+            boton3.style.height="40%";
+            boton3.style.fontSize="1em";
+            boton3.style.fontWeight="100";
+            boton3.style.display="flex";
+            boton3.style.alignItems="center";
+            boton3.style.justifyContent="center";
+            boton3.style.flexDirection="column";
+            div2.appendChild(boton3);
+            var boton4 = document.createElement("button");
+            boton4.innerHTML = "Ropa";
+            boton4.style.backgroundColor = "#fafafa";
+            boton4.style.color = "#000";
+            boton4.style.border = "none";
+            boton4.style.borderRadius = "5px";
+            boton4.style.padding = "5px";
+            boton4.style.cursor = "pointer";
+            boton4.style.width="30%";
+            boton4.style.margin = "5px";
+            boton4.style.height="40%";
+            boton4.style.fontSize="1em";
+            boton4.style.fontWeight="100";
+            boton4.style.display="flex";
+            boton4.style.alignItems="center";
+            boton4.style.justifyContent="center";
+            boton4.style.flexDirection="column";
+            div2.appendChild(boton4);
+            var boton5 = document.createElement("button");
+            boton5.innerHTML = "Colonia";
+            boton5.style.backgroundColor = "#fafafa";
+            boton5.style.color = "#000";
+            boton5.style.border = "none";
+            boton5.style.borderRadius = "5px";
+            boton5.style.padding = "5px";
+            boton5.style.cursor = "pointer";
+            boton5.style.width="30%";
+            boton5.style.margin = "5px";
+            boton5.style.height="40%";
+            boton5.style.fontSize="1em";
+            boton5.style.fontWeight="100";
+            boton5.style.display="flex";
+            boton5.style.alignItems="center";
+            boton5.style.justifyContent="center";
+            boton5.style.flexDirection="column";
+            div2.appendChild(boton5);
+            var boton6 = document.createElement("button");
+            boton6.innerHTML = "Comida";
+            boton6.style.backgroundColor = "#fafafa";
+            boton6.style.color = "#000";
+            boton6.style.border = "none";
+            boton6.style.borderRadius = "5px";
+            boton6.style.padding = "5px";
+            boton6.style.cursor = "pointer";
+            boton6.style.width="30%";
+            boton6.style.margin = "5px";
+            boton6.style.height="40%";
+            boton6.style.fontSize="1em";
+            boton6.style.fontWeight="100";
+            boton6.style.display="flex";
+            boton6.style.alignItems="center";
+            boton6.style.justifyContent="center";
+            boton6.style.flexDirection="column";
+            div2.appendChild(boton6);
+
+            div.innerHTML += "<h2 style=\"font-size:1em;\">Tamaño de tu mascota</h2></div>";
+            //creamos un div display flex con los botones de categorías
+            var div3 = document.createElement("div");
+            div3.style.display="flex";
+            div3.style.flexDirection="row";
+            div3.style.justifyContent="space-evenly";
+            div3.style.width="100%";
+            div3.style.height="100%";
+            div.appendChild(div3);
+
+
+
+            var boton7 = document.createElement("button");
+            boton7.innerHTML = "Pequeño";
+            boton7.style.backgroundColor = "#fafafa";
+            boton7.style.color = "#000";
+            boton7.style.border = "none";
+            boton7.style.borderRadius = "5px";
+            boton7.style.padding = "5px";
+            boton7.style.cursor = "pointer";
+            boton7.style.width="30%";
+            boton7.style.margin = "5px";
+            boton7.style.height="40%";
+            boton7.style.fontSize="1em";
+            boton7.style.fontWeight="100";
+            boton7.style.display="flex";
+            boton7.style.alignItems="center";
+            boton7.style.justifyContent="center";
+            boton7.style.flexDirection="column";
+            div3.appendChild(boton7);
+            
+            var boton8 = document.createElement("button");
+            boton8.innerHTML = "Mediano";
+            boton8.style.backgroundColor = "#fafafa";
+            boton8.style.color = "#000";
+            boton8.style.border = "none";
+            boton8.style.borderRadius = "5px";
+            boton8.style.padding = "5px";
+            boton8.style.cursor = "pointer";
+            boton8.style.width="30%";
+            boton8.style.margin = "5px";
+            boton8.style.height="40%";
+            boton8.style.fontSize="1em";
+            boton8.style.fontWeight="100";
+            boton8.style.display="flex";
+            boton8.style.alignItems="center";
+            boton8.style.justifyContent="center";
+            boton8.style.flexDirection="column";
+            div3.appendChild(boton8);
+
+
+            var boton9 = document.createElement("button");
+            boton9.innerHTML = "Grande  ";
+            boton9.style.backgroundColor = "#fafafa";
+            boton9.style.color = "#000";
+            boton9.style.border = "none";
+            boton9.style.borderRadius = "5px";
+            boton9.style.padding = "5px";
+            boton9.style.cursor = "pointer";
+            boton9.style.width="30%";
+            boton9.style.margin = "5px";
+            boton9.style.height="40%";
+            boton9.style.fontSize="1em";
+            boton9.style.fontWeight="100";
+            boton9.style.display="flex";
+            boton9.style.alignItems="center";
+            boton9.style.justifyContent="center";
+            boton9.style.flexDirection="column";
+            div3.appendChild(boton9);
+
+
+
+            var boton = document.createElement("button");
+            boton.innerHTML = "X";
+            boton.style.position = "absolute";
+            boton.style.top = "0";
+            boton.style.right = "0";
+            boton.style.backgroundColor = "#fafafa";
+            boton.style.color = "#000";
+            boton.style.border = "none";
+            boton.style.borderRadius = "5px";
+            boton.style.padding = "5px";
+            boton.style.margin = "5px";
+            boton.style.cursor = "pointer";
+            boton.addEventListener("click", function(){
+                document.body.removeChild(div);
+            });
+            div.appendChild(boton);
+            var boton1 = document.createElement("button");
+            boton1.innerHTML = "Perros";
+
+            
+
+
+        
+
+        
+        });
+
+</script>
+
+</html>

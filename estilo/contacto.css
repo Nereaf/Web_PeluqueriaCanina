@@ -1,0 +1,100 @@
+@import url("xeral.css");
+@import url("ayuda.css");
+
+.cabecera {
+    position: relative;
+    background-image: url("../img/fContacto.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 20px;
+    height: 70vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+form{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+
+    margin-top:50px;
+    background-color: #464649;
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius:8px ;
+    
+    box-shadow: 0 0 5px #000000;
+}
+label{
+    color: #ffffff;
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+input{
+
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #FAFAFA;
+    background-color: #FAFAFA;
+    color: #000;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+}
+
+textarea{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #fafafa;
+    background-color: #fafafa;
+    color: #000;
+    font-size: 1.2em;
+    height: 250px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+#btn{
+    /*situamos el valor del botn un poco a la izquierda*/
+    
+    margin: 10px;
+    padding: 10px;
+    padding-right:30px;
+  
+    border-radius: 5px;
+    border: 1px solid #9978E1;
+    background-color: #9978E1;
+    color: #fafafa;
+    position:relative;
+    /*colocamos en la mitad calculemos el 50% y le restamos la mitad del ancho del boton*/
+    left: 50%;
+    transform: translateX(-50%);
+    
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+    background-image: url("../img/btn.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 63%;
+    width: 40%;
+    /*sombra*/
+    box-shadow: 0 0 5px #000000;
+}
+#btn:hover{
+    scale: 1.1;
+}

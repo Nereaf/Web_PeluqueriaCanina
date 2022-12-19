@@ -1,0 +1,222 @@
+@import url("xeral.css");
+/*CABECERA IMAGENES + TEXTO*/
+.cabecera{
+    position: relative;
+    background-image: url("../img/tquienes.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.txt{
+    position:relative;
+    top:50%;
+    left: 60px;
+}
+.cabecera h1{
+    position:relative;
+    color:#E5F1FF;
+    font-size: 3em;
+}
+/*sección de los botones con sus respectivas imagenes*/
+.botones{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: 600;
+    width: 100%;
+    height: fit-content;
+    padding: 30px;
+    margin-top:20px;
+
+    
+}
+.botones div{
+    background-color: #E5F1FF;
+    color: #000;
+    height: 10rem;
+    width: 20rem ;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    padding-bottom: 0;
+    /*introducimos sobreado superior e inferior*/
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.15);
+
+    
+}
+h6{
+    font-size: 1.2rem;
+}
+.boton1{
+    position:relative;
+   background-image: url("../img/phistoria.png");
+   background-repeat: no-repeat;
+   background-position-y: bottom;
+   background-position-x: right;
+   background-size: 40% 80%;
+   padding:0;
+   cursor:pointer;
+   margin:0;
+   border:0;
+}
+
+.boton2{
+    position:relative;
+    background-image: url("../img/pequipo.png");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: right;
+    background-size: 40% 100%;
+    padding:0;
+    cursor:pointer;
+    border:0;
+}
+.b2{
+    background-color:rgba(229.00000154972076, 241.00000083446503, 255, 1);
+    color: #000;
+
+	border:2px solid rgba(101.1499947309494, 116.07374712824821, 252.87500202655792, 1);
+}
+
+
+.historia{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 600;
+    width: 100%;
+    height: fit-content;
+    padding: 30px;
+    margin-top:20px;
+    margin-bottom: 60px;
+    background-color: #F0F7FF;
+    padding: 0;
+    border: 0;
+    /*sombreado de 8 px parte superior*/
+    box-shadow: 0 0 8px  0 rgba(0, 0, 0, 0.15);
+}
+
+.titulo{
+    background-image: url("../img/hfondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 100% auto;
+    /*hacer un poco transparente el fondo difuminando con color  #F0F7FF*/
+    background-color: rgba(240.00000059604645, 247.00000083446503, 255, 0.5);
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+    color: #4c56b1;
+    font-size: 3em;
+    font-weight: 300;
+}
+.texto{
+    position: relative;
+    font-size: large;
+    font-weight: 200;
+    width: 70%;
+    /*aumento espacio interlineado*/
+    line-height: 2;
+    /*espaciado entre letras*/
+    letter-spacing: 0.09em;
+    padding-bottom: 30px;
+    /*justificar texto*/
+    text-align: justify;
+
+}
+.flecha{
+    position:relative;
+
+}
+.flecha img{
+    position:relative;
+    width: 70%;
+    height: 80%;
+}
+
+.contactos{
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+}
+
+.fila{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    width: 100%;
+    padding-bottom: 30px;
+
+}
+
+.column{
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    background-color: #E5F1FF;
+    margin: 30px;
+    width:600px;
+    /*sombras*/
+    box-shadow: 0 0 8px  0 rgba(0, 0, 0, 0.15);
+
+
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.info h4{
+    font-size: 0.9em;
+    font-weight: 200;
+
+    color: #949494;
+    padding: 20px;
+    padding-bottom: 0;
+    margin: 0;
+    border: 0;
+}
+
+.nombre{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.column h1{
+    font-size: large;
+    font-weight: 600;
+    color: #000;
+}
+.column h2{
+    font-size: medium;
+    font-weight: 300;
+    color: rgb(146, 146, 146);
+}
+.column picture{
+    position:relative;
+    width: 150px;
+    height: 150px;
+}
+.column img{
+    position:relative;
+    width: 100%;
+    height: 100%;
+}
+
+

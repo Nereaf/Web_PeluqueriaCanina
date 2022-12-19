@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>PAT- DUDAS</title>
+    <link rel="shortcut icon" href="../img/huella.png">
+    <link rel="stylesheet" href="../estilo/ayuda.css">
+</html>
+</head>
+
+
+
+<header>
+    <!-- menú horizontal flotante -->
+
+    <nav>
+        <ul>
+            <li><a href="../index.html"> <img src="../img/logo.png"></a> </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li><a href="./pedirCita.html"><button>Concerta tu cita</button></a></li>
+            <li><a href="./modificarCita.html" ><button class="b2">Modifica tu cita</button></li></a>
+            <li><a href="./servicios.html">Servicios</a></li>
+            <li><a href="./catalogo.html">Catálogo</a></li>
+            <li><a href="./instalaciones.html">Instalaciones</a></li>
+            <li><a href="./quienes.html">¿Quienes somos?</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+
+
+
+    <section class="cabecera">
+        <div class="txt">
+            <h1>Las preguntas más frecuentes</h1>
+            <h3> Todo lo que necesitas saber de nuestros productos y servicios.</h3>
+        </div>
+</section>
+
+
+<picture class="interr">
+    <a href="./contacto.html"><img src="../img/contacto.png"></a>
+</picture>
+
+
+    <div class="layout">
+        <div class="accordion">
+            <div class="accordion__question">
+                <p>Es necesario pedir cita para ser atendido en la peluquería canina?</p>
+  
+            </div>
+            <div class="accordion__answer">
+                <p> Sí, para poder atenderle con la mejor eficiencia y calidad fijamos unos horarios por lo que sí se debe pedir cita. </p>
+  
+            </div>
+        </div>
+        <hr >
+        <div class="accordion">
+            <div class="accordion__question">
+                <p>Puedo cambiar mi cita?</p>
+  
+            </div>
+            <div class="accordion__answer">
+                <p>
+                  Puede consultar si su cita está disponible en el apartado de "modificar cita" en la página principal. Ahí, podrá ver si su cita está disponible a través del código que le proporcionamos al pedir la cita. Si no está disponible, puede pedir una nueva cita en el apartado de "pedir cita" en la página principal.
+                  En caso de que esté disponible podrá cambiar el día, la hora e incluso el servicio que desea.
+                </p>
+  
+            </div>
+        </div>
+
+        <hr>
+        <div class="accordion">
+            <div class="accordion__question">
+                <p>Puedo cancelar mi cita?</p>
+  
+            </div>
+            <div class="accordion__answer">
+                <p> Puede cancelar su cita cuando no pueda asistir antes de las 24 h de la cita concertada, de ser reincidente y sin motivo aparente no podrá volver a pedir cita. 
+                     Si no puede asistir a la cita, puede pedir una nueva cita en el apartado de "pedir cita" en la página principal o modificarla en el de "modificar cita".</p>
+  
+            </div>
+
+            <hr>
+        </div>
+    
+    
+        <div class="accordion">
+            <div class="accordion__question">
+                <p>    Cómo puedo comprar los objetos del catálogo?</p>
+  
+            </div>
+            <div class="accordion__answer">
+                <p> En esta página web no está disponible la compra de los objetos del catálogo, pero sí puede comprarlos en nuestra peluquería canina. </p>
+            </div>
+
+          
+        </div>
+        <hr>
+        <div class="accordion">
+            <div class="accordion__question">
+                <p>    Existen ofertas de los servicios?</p>
+  
+            </div>
+            <div class="accordion__answer">
+                <p> Existen ofertas para los clientes habituales, para más información consulte en la peluquería canina. </p>
+            </div>
+
+          
+        </div>
+        <hr>
+        <div class="accordion">
+            <div class="accordion__question">
+                <p>   Puedo dejear a mi mascota en el local despues de la cita?</p>
+  
+            </div>
+            <div class="accordion__answer">
+                <p> En nuestor local existe un servicio de guardería canina, con el mismo horario que la peluquería canina.  Este servicio no tendrá coste adicional. </p>
+            </div>
+
+          
+        </div>
+        <hr>
+    </div>
+
+
+    <div class="cont">
+        <h1>Tienes más preguntas?</h1>
+
+        <h2>No encuentras lo que buscas? Porfavor, pregúntanos sin compromiso.</h2>
+
+        <a href="./contacto.html"> <button class="b3"> Contacta con nosotros</button></a>
+
+
+    </div>
+
+    <footer>
+        <div class="filafooter">
+            <picture id="imlog">
+                <img src="../img/logo.png">
+            </picture>
+            <picture>
+                <img src="../img/twitter.png">
+                <img src="../img/facebook.png">
+                <img src="../img/insta.png">
+            </picture>
+
+        </div>
+        <div class="filafooterlinea">
+            <h6>@ Copyright 2021.. All Rights Reserved</h6>
+        </div>
+
+
+    </footer>
+</body>
+
+
+<script>
+    let answers=document.querySelectorAll(".accordion");
+    answers.forEach((event)=>{
+        event.addEventListener('click',()=>{
+            if(event.classList.contains("active")){
+                event.classList.remove("active");
+                       /*cambiamos la imagen de fondo del elemento por la imagen de la flecha hacia abajo sin repetir*/
+                       event.style.backgroundImage="url(../img/desplegable.png)";
+            }
+            else{
+                event.classList.add("active");
+                /*cambiamos la imagen de fondo del elemento por la imagen de la flecha hacia abajo sin repetir*/
+                event.style.backgroundImage="url(../img/p.png)";
+            }
+            
+        })
+    
+    })
+</script>
+</html>

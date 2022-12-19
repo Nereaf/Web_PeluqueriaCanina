@@ -1,0 +1,207 @@
+@import url("xeral.css");
+
+html{
+    overflow-x: hidden;
+   
+}
+/*CABECERA IMAGENES + TEXTO*/
+.cabecera{
+    position: relative;
+    background-image: url("../img/Imagen1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.txt{
+    position:relative;
+    top:50%;
+    left: 60px;
+}
+.cabecera h1{
+    position:relative;
+    color:#E5F1FF;
+    font-size: 3em;
+}
+.cabecera h2{
+    position:relative;
+    color:rgb(201, 201, 201);
+    font-size: 2em;
+    left: 10px;
+}
+
+
+
+
+/*sección de los botones con sus respectivas imagenes*/
+.botones{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-weight: 600;
+    width: 90%;
+    flex-wrap: wrap;    
+    height: fit-content;
+    padding: 30px;
+    margin-top:20px;
+
+    
+}
+.botones div{
+    background-color: #F0F7FF;
+    color: #000;
+    height: 10rem;
+    width: 20rem ;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    padding-bottom: 0;
+    /*introducimos sobreado superior e inferior*/
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.15);
+
+    
+}
+h6{
+    font-size: 1.2rem;
+}
+.boton1{
+    position:relative;
+   background-image: url("../img/Imagen2.png");
+   background-repeat: no-repeat;
+   background-position: bottom;
+   background-size: 70% 45%;
+   padding:0;
+   cursor:pointer;
+   margin:0;
+   border:0;
+}
+
+.boton2{
+    position:relative;
+    background-image: url("../img/Imagen3.png");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: right;
+    background-size: 40% 100%;
+    padding:0;
+    cursor:pointer;
+    margin:0;
+    border:0;
+}
+/*seción de bienvenida*/
+.bienvenida{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 50px;
+    background-image: url(../img/Imagen4.png);
+    background-repeat: no-repeat;
+    background-position-x:left;
+    background-position-y: bottom;
+    background-color: #E5F1FF;
+    background-size: 50% auto;
+   /*sobra en la parte superior del fondo*/
+   box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.05);
+}
+.bienvenida h1{
+    width: 40%;
+    left: 35%;
+    position: relative;
+    color: #000;
+    font-size: 3em;
+    padding-top: 2rem;
+    text-align: right;
+}
+.bienvenida h2{
+        
+    position: relative;
+    /*pegamos el teto a el lado derecho*/
+    left: 55%;
+    width: 30%;
+    color: rgb(88, 88, 88);
+    font-size: 1.5em;
+    /*texto justificado*/
+    text-align: justify;
+    font-weight: 200;
+    padding-top: 2rem;
+}
+
+.bienvenida h3{
+    width: 50%;
+    height: 5%;
+    left: 35%;
+    position: relative;
+    color: rgb(160, 160, 160);
+    font-size: 1.75em;
+    padding-top: 5rem;
+
+}
+
+/*__SECCION mapas*/
+.mapas{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: fit-content;
+    margin: 0;
+    border: 0;
+}
+.mapa{
+    position: relative;
+    width: auto;
+    height: auto;
+    left: 8%;
+
+
+}
+.inf{
+    align-self: right;
+    margin: 0;
+    padding: 0;
+    
+}
+.inf h1{
+    color:#fafafa;
+    font-size: 2em;
+}
+.inf h3{
+    font-weight: 100;
+    text-align: center;
+}
+.inf h2{
+    font-weight: 300;
+    text-align: center;
+}
+.titulo{
+    position: relative;
+    width: 100%;
+    left: 0%;
+
+    background-color: #6574FD;
+    background-image: url(../img/donde.png);
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-size: 10% 80%;
+    background-position-x: 1cm;
+    background-position-y: 0.25cm;
+    text-align: center;
+    padding: 5px;
+    border-radius: 8px;
+
+}
+
+
+
+
+.boton3{
+    /*hacemos que el tenga un degradado desde el color base hasta el blanco*/
+    background-image: linear-gradient(to right, #a7aff9b8, #7f8af3b8);
+}

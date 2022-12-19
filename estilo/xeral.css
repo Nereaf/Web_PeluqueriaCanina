@@ -1,0 +1,215 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    top:0px;
+    font-size: 1rem;
+    line-height: 24px;
+    color: #18181B;
+    background-color: #E5F1FF;
+    padding: 0px;   
+     margin: 0;
+     /*sombreado inferior*/
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+nav ul{
+    /*disposición  en horizontal*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    align-items: center;
+}
+
+nav button{
+    background-color:rgba(72.00000330805779, 90.00000223517418, 255, 1);
+    color: #fafafa;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 24px;
+    border: none;
+    width:10em;
+    border-radius: 0.1vh;
+    font-size: 1rem;
+    padding: 1em;
+    height:56.75675964355469px;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
+    margin-right: 42px;
+    align-self: center;
+    cursor: pointer;
+}
+
+nav ul a{
+    /*quitar el subrayado*/
+    text-decoration: none;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #000;
+	text-align:right;
+	letter-spacing:0;
+	line-height:px;
+   
+
+}
+nav ul  a:hover{
+    font-weight: 900;
+    scale:1em;
+
+}
+nav ul img{
+    width:130.5px;
+	height:60px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.b2{
+    background-color:rgba(229.00000154972076, 241.00000083446503, 255, 1);
+    color: #000;
+
+	border:2px solid rgba(101.1499947309494, 116.07374712824821, 252.87500202655792, 1);
+}
+.seleccionado{
+    position:relative;
+    background-color: #6574FD;
+    font-weight: 600;
+    height: 85px;
+    border:0;
+    margin:0;
+    padding-left:10px;
+    padding-right:10px;
+
+
+}
+.seleccionado a{
+    position:relative;
+    color: #fafafa;
+    top:32%;
+    text-align: center;
+}
+.conta{
+    position: fixed;
+    z-index: 90;
+    bottom: 110px;
+    right: 20px;
+    width: 100px; 
+    height: 100px;
+
+}
+.conta img{
+    position:relative;
+    left: 11px;
+    width: 75px;
+    height: 65px;
+}
+.interr{
+    position: fixed;
+    z-index: 90;
+    bottom: 20px;
+    right: 30px;
+    width: 100px; 
+    height: 100px;
+}
+.interr img{
+    position:relative;
+    left: 22px;
+    width: 75px;
+    height: 65px;
+}
+
+.txt{
+    position:relative;
+    top:50%;
+    left: 60px;
+}
+.cabecera h1{
+    position:relative;
+    color:#E5F1FF;
+    font-size: 3em;
+}
+body{
+    overflow-x: hidden;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #fafafa;
+    padding: 0;
+    margin: 0;
+    border:0;
+}
+footer{
+    margin-top: 50px;
+    padding-bottom:20px;
+    width: 100%;
+    height: 9em;
+    background-color: #E5F1FF;
+    box-shadow: 1rem 1rem 1rem 1rem rgba(0, 0, 0, 0.15);
+    display:flex;
+    flex-direction: column;
+    /*centramos el contenido*/
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+footer .filafooter{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    height:5vh;
+    position: relative;   
+}
+
+.filafooterlinea{
+    border-top: 1px solid #000000;
+    width: 80%;
+    height:0%;
+    padding-bottom: 60px;
+    position: relative;
+
+}
+
+footer picture {
+    position: relative;
+    width: auto;
+    padding-top: 10px;
+    height: 100%;
+    left:10vh;
+
+}
+
+footer picture img{
+    position: relative;
+    width: 10%;
+    padding-right: 25px;
+    height: auto;
+}
+
+#imlog{
+    position: relative;
+    width: 100%;
+    padding-right: 25px;
+    height: auto; 
+}
+#imlog img{
+    position: relative;
+    width: 8vh;
+    padding-bottom: auto;
+    height: auto; 
+}
+.filafooterlinea h6{
+    font-weight: 100;
+}

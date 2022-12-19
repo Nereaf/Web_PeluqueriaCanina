@@ -1,0 +1,163 @@
+@import url("./xeral.css");
+
+.cabecera {
+    position: relative;
+    background-image: url("../img/fAyuda.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 20px;
+    height: 70vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.txt {
+    position: relative;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+    width: fit-content;
+    height: fit-content;
+    /* reducimos la separación entre líneas */
+    line-height: 0.9em;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    padding-right: 30px;
+    /*podemos color de fondo un poco transparente para que se vea el fondo de la imagen*/
+    background-color: rgba(101, 116, 253, 0.8);
+
+    border-radius: 8px;
+
+}
+
+.txt h1 {
+    color: #FAFAFA;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.txt h3 {
+    color: #FAFAFA;
+    font-size: 1.0em;
+    font-weight: 200;
+}
+
+
+.layout {
+    width: 50%;
+    margin: auto;
+}
+
+.accordion {
+    background-image: url("../img/desplegable.png");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: right;
+    background-position-y: 0;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.accordion__question p {
+    margin: 5px;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+
+    font-size: 20px;
+}
+
+.accordion__answer p {
+    margin: 5px;
+    padding: 10px;
+    font-size: large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: rgb(134, 134, 134);
+    border-radius: 10px;
+}
+
+.accordion:hover {
+    cursor: pointer;
+}
+
+.accordion__answer {
+    display: none;
+}
+
+.accordion.active .accordion__answer {
+    display: block;
+}
+
+
+hr {
+    background-color: #EAECF0;
+    /*difuimos el color*/
+    opacity: 0.5;
+    /*ancho de la linea*/
+    height: 1px;
+    /*sombreado*/
+    box-shadow: 0 0 10px 1px #EAECF0;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 80%;
+    margin-left: 10%;
+    height: fit-content;
+    background-color: #F0F7FF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px #EAECF0;
+
+}
+
+.cont h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #3B3B3B;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cont h2 {
+    position:relative;
+    font-size: 1.2em;
+    font-weight: 200;
+    color: #3B3B3B;
+    top:-20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.cont .b3 {
+
+    border-radius: 10px;
+    width: 494px;
+    height: 44px;
+    background: #6574FD;
+    border: 1px solid #6574FD;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 24px;
+    /* identical to box height, or 80% */
+    color: #FFFFFF;
+    cursor: pointer;
+}
